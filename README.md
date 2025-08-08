@@ -120,8 +120,6 @@ Components use Block-Element-Modifier methodology for clear, maintainable CSS:
 - **Team collaboration** - Clear ownership and naming conventions
 - **Scalable architecture** - Easy to add new components
 
-> 📖 **For detailed architecture information**, see [ARCHITECTURE.md](ARCHITECTURE.md)
-
 ## Asset Organization
 The project uses a dual approach for images:
 - **`public/images/`** - Large static assets (gallery photos, backgrounds) served directly
@@ -135,4 +133,4 @@ The project uses a dual approach for images:
 - Edge (latest)
 
 ## License
-© 2025 Tress Theory. All rights reserved.
+- This project is licensed under the GNU GPL-3.0 License.
