@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Contact Component Styles
+   ========================================================================== */
+
+/* Contact section container */
+.contact {
+  padding: var(--spacing-section) 0;
+  background: var(--color-cream);
+  width: 100%;
+}
+
+/* Content container */
+.contact__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section title */
+.contact__title {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-dark);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Contact information grid */
+.contact__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Individual contact section */
+.contact__section {
+  padding: var(--spacing-lg);
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-light);
+}
+
+/* Contact section title */
+.contact__section-title {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-large);
+  font-weight: 400;
+}
+
+/* Contact section text */
+.contact__section p {
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Emphasized text styling */
+.contact__section strong {
+  color: var(--primary-color);
+}
+
+/* Booking button styling */
+.contact__booking-button {
+  background: var(--primary-color);
+  color: var(--color-white);
+  border: none;
+  padding: 15px 30px;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: background var(--transition-medium);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Booking button hover effects */
+.contact__booking-button:hover {
+  background: #6d3410;
+  transform: translateY(-2px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 0;
+  }
+
+  .contact__title {
+    font-size: var(--font-size-xl);
+    padding: 0 var(--spacing-sm);
+  }
+
+  .contact__info {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+  }
+}

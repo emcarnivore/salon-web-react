@@ -1,0 +1,95 @@
+/* ==========================================================================
+   About Component Styles
+   ========================================================================== */
+
+/* About section container */
+.about {
+  padding: var(--spacing-section) 0;
+  background: var(--color-light);
+  width: 100%;
+}
+
+/* Content container */
+.about__content {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section title */
+.about__title {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-dark);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 1px;
+}
+
+/* Main statement heading */
+.about__statement {
+  font-size: var(--font-size-h3);
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+/* Main description text */
+.about__description {
+  font-size: var(--font-size-medium);
+  line-height: 1.8;
+  color: var(--color-midgrey);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive design for tablets and mobile */
+@media (max-width: 768px) {
+  .about__content {
+    padding: 1rem;
+  }
+  
+  .about__main-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+  }
+  
+  .about__description {
+    font-size: var(--font-size-medium);
+  }
+}
+
+/* Team members grid */
+.about__team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Individual team member */
+.about__team-member {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Team member profile image */
+.about__team-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Team member name */
+.about__team-name {
+  font-size: var(--font-size-h4);
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* Team member role/title */
+.about__team-role {
+  color: var(--text-color-light);
+  font-style: italic;
+}

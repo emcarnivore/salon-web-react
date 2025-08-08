@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Hero Component Styles
+   ========================================================================== */
+
+.hero {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+
+  /* Base background properties */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Background image with overlay */
+.hero[data-background="default"] {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)),   /* Gradient from dark at top to light at bottom */
+                    var(--hero-bg-image);
+}
+
+/* Content container */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem;
+}
+
+/* Main heading */
+.hero__title {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Subtitle text */
+.hero__subtitle {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Call-to-action button */
+.hero__cta-button {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+/* Button hover effects */
+.hero__cta-button:hover {
+  background: white;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}

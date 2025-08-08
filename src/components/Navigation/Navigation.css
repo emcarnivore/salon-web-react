@@ -1,0 +1,183 @@
+/* ==========================================================================
+   Navigation Component Styles
+   ========================================================================== */
+
+/* Navigation container */
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition-medium);
+  background: transparent;
+}
+
+/* Content container */
+.navigation__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 1rem 4rem;   /* top right bottom left */
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+/* Logo styling */
+.navigation__logo-image {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition-medium);
+}
+
+/* Logo text fallback */
+.navigation__logo-text,
+.navigation__logo-text--fallback {
+  color: var(--color-white);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-heading);
+  margin: 0;
+}
+
+/* Hide text when logo image is showing */
+.navigation__logo-text {
+  display: none;
+}
+
+/* Show text when logo image fails */
+.navigation__logo-text--fallback {
+  display: block;
+}
+
+/* Mobile menu toggle button - hidden by default */
+.navigation__mobile-toggle {
+  display: none;
+}
+
+/* Desktop navigation menu */
+.navigation__menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-xl);              
+  margin: 0;
+  padding: 0;
+  align-items: center;   /* Vertically center the links */
+}
+
+/* Menu link styling */
+.navigation__menu-link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-heading);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;                     
+  transition: var(--transition-medium);                  
+  position: relative;                         
+}
+
+/* Menu link hover effects */
+.navigation__menu-link:hover {
+  color: var(--primary-color);
+}
+
+/* Active/focus states for accessibility */
+.navigation__menu-link:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Medium screens - shrink navigation before mobile */
+@media (max-width: 1440px) and (min-width: 1281px) {
+  .navigation__menu {
+    gap: var(--spacing-lg);
+  }
+  
+  .navigation__menu-link {
+    font-size: var(--font-size-medium);
+    letter-spacing: 2px;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .navigation__logo-image {
+    height: 65px;
+  }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1280px) {
+  /* Mobile menu toggle button */
+  .navigation__mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  /* Hamburger menu lines */
+  .navigation__mobile-toggle span {
+    width: 30px;
+    height: 3px;
+    background: var(--color-white);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 1.5px;   /* Slightly rounded corners */
+  }
+
+  /* Hamburger animation - first line */
+  .navigation__mobile-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background: var(--primary-color);
+  }
+
+  /* Hamburger animation - middle line */
+  .navigation__mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* Hamburger animation - last line */
+  .navigation__mobile-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+    background: var(--primary-color);
+  }
+
+  /* Mobile logo optimization for better visibility */
+  .navigation__logo-image {
+    height: 50px;
+  }
+
+  /* Mobile menu styling */
+  .navigation__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: var(--spacing-lg);
+    display: none;
+  }
+
+  /* Mobile menu link colors */
+  .navigation__menu-link {
+    color: var(--color-dark);
+  }
+
+  /* Mobile menu link hover effects */
+  .navigation__menu-link:hover {
+    color: var(--primary-color);
+  }
+
+  /* Show mobile menu when active */
+  .navigation__menu.show {
+    display: flex;
+  }
+}

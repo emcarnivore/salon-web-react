@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Footer Component Styles
+   ========================================================================== */
+
+/* Footer container */
+.footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: var(--spacing-xxl) 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer content container */
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+/* Footer logo section */
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer logo text */
+.footer__logo h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-large);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Copyright section */
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-size-small);
+}
+
+/* Copyright text */
+.footer__copyright p {
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+    padding: 0 var(--spacing-md);
+  }
+}

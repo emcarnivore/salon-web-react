@@ -1,0 +1,80 @@
+{
+  "name": "tress-theory-website",
+  "version": "1.0.0",
+  "description": "A responsive hair salon website built with React showcasing modern UI/UX design principles",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "react-scripts start"
+  },
+  "keywords": [
+    "hair-salon",
+    "react",
+    "ui-design",
+    "ux-design",
+    "responsive-design",
+    "mobile-first",
+    "javascript",
+    "semantic-html",
+    "css3",
+    "frontend-portfolio",
+    "spa"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-portfolio.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/tress-theory-website.git"
+  },
+  "homepage": "https://your-username.github.io/tress-theory-website",
+  "bugs": {
+    "url": "https://github.com/your-username/tress-theory-website/issues"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "portfolio": {
+    "category": "Frontend Development",
+    "technologies": ["React", "HTML5", "CSS3", "JavaScript ES6+", "Responsive Design"],
+    "features": [
+      "React single-page application",
+      "Component-based architecture",
+      "Mobile-first responsive design",
+      "Modern React hooks",
+      "Accessibility compliant (ARIA)",
+      "Cross-browser compatibility",
+      "Performance optimized"
+    ],
+    "status": "In Development",
+    "demo": "npm start"
+  }
+}

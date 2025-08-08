@@ -1,0 +1,66 @@
+/* CSS Custom Properties (Variables) for Tress Theory Salon */
+:root {
+  /* Brand Colors - Vibrant Orange Theme */
+  --primary-color: #ff914d;      /* Vibrant Orange - main brand color */
+  
+  /* Supporting Palette */
+  --color-white: #ffffff;        /* Pure white */
+  --color-light: #ecf0f1;        /* Light neutral */
+  --color-cream: #f5f1ed;        /* Warm cream */
+  --color-lightgrey: #bdc3c7;    /* Light grey */
+  --color-midgrey: #7f8c8d;      /* Mid-tone grey */
+  --color-dark: #2c3e50;         /* Dark charcoal */
+  
+  /* Typography */
+  --font-family-heading: 'Libre Baskerville', serif;   /* Headings/logo */
+  --font-family-body: 'Montserrat', sans-serif;        /* Main body */
+  
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Font Sizes */
+  --font-size-small: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-medium: 1.1rem;
+  --font-size-large: 1.4rem;
+  --font-size-xl: 1.8rem;
+  --font-size-xxl: 2.5rem;
+  --font-size-hero: 3rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;      /* 8px */
+  --spacing-sm: 1rem;        /* 16px */
+  --spacing-md: 1.5rem;      /* 24px */
+  --spacing-lg: 2rem;        /* 32px */
+  --spacing-xl: 3rem;        /* 48px */
+  --spacing-xxl: 4rem;       /* 64px */
+  --spacing-section: 5rem;   /* 80px */
+  --spacing-section-mobile: 3.75rem; /* 60px - mobile section padding */
+  
+  /* Border Radius */
+  --border-radius-sm: 3px;
+  --border-radius-md: 5px;
+  --border-radius-lg: 8px;
+  
+  /* Shadows */
+  --shadow-light: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-medium: 0 4px 8px rgba(0,0,0,0.15);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Breakpoints (for use in media queries) */
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --wide: 1200px;
+  
+  /* Container Widths */
+  --container-max: 1200px;
+  --content-max: 1000px;
+}

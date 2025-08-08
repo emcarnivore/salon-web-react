@@ -1,0 +1,150 @@
+/* Responsive Design System for Tress Theory Salon */
+
+/* Mobile First Approach - Base styles are mobile, then scale up */
+
+/* Small Mobile (480px and up) */
+@media (min-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  /* Typography scaling */
+  .hero-content h1 {
+    font-size: var(--font-size-hero);
+  }
+  
+  .hero-content p {
+    font-size: var(--font-size-large);
+  }
+  
+  /* Navigation */
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  .nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-left: var(--spacing-lg);
+  }
+  
+  /* Layout improvements */
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* Section spacing */
+  .section-content {
+    padding: var(--spacing-section) var(--spacing-lg);
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  /* Enhanced typography */
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero {
+    padding: 150px var(--spacing-lg);
+  }
+  
+  /* Navigation spacing */
+  .nav-content {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  /* Grid layouts */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  /* Enhanced spacing */
+  .section-content {
+    padding: 100px var(--spacing-lg);
+  }
+}
+
+/* Wide Desktop (1200px and up) */
+@media (min-width: 1200px) {
+  /* Maximum content width */
+  .hero {
+    padding: 180px var(--spacing-lg);
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  /* Enhanced grid layouts */
+  .services-grid {
+    gap: var(--spacing-xxl);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .mobile-menu-toggle,
+  .cta-button,
+  .book-button {
+    display: none;
+  }
+  
+  .hero {
+    background: none;
+    color: var(--text-primary);
+  }
+  
+  * {
+    box-shadow: none !important;
+  }
+}
+
+/* High DPI / Retina Displays */
+@media (min-resolution: 192dpi) {
+  /* Enhanced image quality settings would go here */
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto !important;
+  }
+}

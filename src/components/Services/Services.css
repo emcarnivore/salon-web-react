@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Services Component Styles
+   ========================================================================== */
+
+/* Services section container */
+.services {
+  padding: var(--spacing-section) 0;
+  background: var(--color-white);
+  width: 100%;
+}
+
+/* Content container */
+.services__content {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section title */
+.services__title {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-xxl);
+  color: var(--color-dark);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 1px;
+}
+
+/* Services grid layout */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual service item */
+.services__item {
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Service item hover effects */
+.services__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Service item title */
+.services__item-title {
+  font-size: var(--font-size-h3);
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Service item description */
+.services__item-description {
+  color: var(--text-color);
+  line-height: 1.6;
+}
