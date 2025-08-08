@@ -67,11 +67,10 @@ npm run eject    # Eject from Create React App (advanced)
 ### **Adding New Components**
 Follow the component-scoped architecture:
 ```javascript
-// 1. Create component file: src/components/NewComponent.js
-import React from 'react';
+// 1. Create component folder: src/components/NewComponent/
+// 2. Create component file: src/components/NewComponent/NewComponent.js
 import './NewComponent.css';
-
-// 2. Create styles file: src/components/NewComponent.css
+// 3. Create styles file: src/components/NewComponent/NewComponent.css
 // Use BEM naming: .new-component, .new-component__element
 ```
 
@@ -82,22 +81,26 @@ import './NewComponent.css';
 - Keep styles **component-scoped** when possible
 
 ## Future Features
-- [ ] Online booking system integration
-- [ ] Interactive image gallery with lightbox
-- [ ] Contact form with validation
-- [ ] Customer testimonials carousel
-- [ ] Service catalog with detailed pricing
 - [ ] Staff member profiles
+- [ ] Service catalog with detailed pricing
+- [ ] Interactive image gallery
+- [ ] Customer testimonials
+- [ ] Contact form with validation
 - [ ] Social media integration
 
 ### **Technical Roadmap**
-- [ ] Complete component CSS migration (Services, About, Gallery, Contact, Footer)
+- [ ] SEO optimization - Meta tags, Open Graph tags, structured data
+- [ ] Form validation - Client-side contact form validation with better UX
+- [ ] Performance optimization - Image optimization, lazy loading, code splitting
+- [ ] Animation enhancements - Scroll animations, hover effects, transitions
+- [ ] Accessibility improvements - ARIA labels, keyboard navigation, screen reader support
+- [ ] Progressive Web App (PWA) - Service worker, offline capability, installable
 - [ ] Implement CSS Modules or Styled Components
 - [ ] Add TypeScript for better development experience
 - [ ] Unit testing with Jest and React Testing Library
 
 ## CSS Architecture
-This project uses a **component-scoped CSS architecture** following industry best practices:
+This project uses a **component-scoped CSS architecture**
 
 ### **File Organization**
 - **`variables.css`** - CSS custom properties for consistent design tokens
@@ -119,12 +122,6 @@ Components use Block-Element-Modifier methodology for clear, maintainable CSS:
 - **Easy maintenance** - Styles live next to their components
 - **Team collaboration** - Clear ownership and naming conventions
 - **Scalable architecture** - Easy to add new components
-
-## Asset Organization
-The project uses a dual approach for images:
-- **`public/images/`** - Large static assets (gallery photos, backgrounds) served directly
-- **`src/assets/images/`** - Small imported assets (icons, logos) processed by webpack
-- See individual README files in each directory for detailed usage guidelines
 
 ## Browser Support
 - Chrome (latest)
