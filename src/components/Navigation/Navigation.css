@@ -36,10 +36,11 @@
 .navigation__logo-text,
 .navigation__logo-text--fallback {
   color: var(--color-white);
-  font-size: var(--font-size-xxl);
-  font-weight: var(--font-weight-medium);
   font-family: var(--font-family-heading);
+  font-size: var(--font-size-logo-fallback);
+  font-weight: var(--font-weight-nav);
   margin: 0;
+  transition: var(--transition-medium);
 }
 
 /* Hide text when logo image is showing */
@@ -61,7 +62,7 @@
 .navigation__menu {
   display: flex;
   list-style: none;
-  gap: var(--spacing-xl);              
+  gap: 3rem;              
   margin: 0;
   padding: 0;
   align-items: center;   /* Vertically center the links */
@@ -71,13 +72,13 @@
 .navigation__menu-link {
   text-decoration: none;
   color: var(--color-white);
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-medium);
   font-family: var(--font-family-heading);
-  letter-spacing: 4px;
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-nav);
+  transition: var(--transition-medium);
+  letter-spacing: var(--spacing-nav);
   text-transform: uppercase;
-  padding: 0.5rem 1rem;                     
-  transition: var(--transition-medium);                  
+  padding: 0.5rem 1rem;                                      
   position: relative;                         
 }
 
@@ -95,11 +96,11 @@
 /* Medium screens - shrink navigation before mobile */
 @media (max-width: 1440px) and (min-width: 1281px) {
   .navigation__menu {
-    gap: var(--spacing-lg);
+    gap: 2rem;
   }
   
   .navigation__menu-link {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-nav-mobile);
     letter-spacing: 2px;
     padding: 0.4rem 0.8rem;
   }
@@ -153,6 +154,12 @@
     height: 50px;
   }
 
+  /* Mobile logo text fallback optimization */
+  .navigation__logo-text,
+  .navigation__logo-text--fallback {
+    font-size: var(--font-size-logo-fallback-mobile);
+  }
+
   /* Mobile menu styling */
   .navigation__menu {
     position: absolute;
@@ -162,7 +169,7 @@
     background: var(--color-white);
     flex-direction: column;
     padding: 1rem 2rem;
-    gap: var(--spacing-lg);
+    gap: 2rem;
     display: none;
   }
 

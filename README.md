@@ -1,6 +1,6 @@
-# Tress Theory - Hair Salon Website
+# Tress Theory - Hair and Beauty Salon Website
 
-A modern, responsive React website for Tress Theory hair salon.
+A modern, responsive React website for a hair and beauty salon featuring component-scoped CSS architecture with BEM methodology, mobile-first design, and professional UI/UX.
 
 ## Features
 - Responsive design (mobile-first)

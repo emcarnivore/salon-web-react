@@ -23,8 +23,8 @@ const Hero = () => {
   return (
     <section id="home" className="hero" data-background="default" style={heroStyle}>
       <div className="hero__content">
-        <h1 className="hero__title">Letting Your True Beauty Shine</h1>
-        <p className="hero__subtitle">Experience World-Class Hair And Beauty Services</p>
+        <h1 className="hero__title">Letting Your<br />True Beauty Shine</h1>
+        <p className="hero__subtitle">Experience world-class hair and beauty services</p>
         <a href="#contact" className="hero__cta-button" onClick={handleBookingClick}>
           Book An Appointment
         </a>

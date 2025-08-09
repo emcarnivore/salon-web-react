@@ -16,38 +16,56 @@
   --font-family-body: 'Montserrat', sans-serif;        /* Main body */
   
   /* Font Weights */
-  --font-weight-normal: 400;
+  --font-weight-nav: 500;
+  --font-weight-hero-title: 400;
+  --font-weight-hero-subtitle: 400;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;   /* Libre */
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  
+  --font-weight-bold: 700;   /* Libre */
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
   /* Font Sizes */
+  --font-size-nav: 1.5rem;
+  --font-size-nav-mobile: 1.1rem;
+  --font-size-logo-fallback: 2.5rem;
+  --font-size-logo-fallback-mobile: 2.1rem;
+  --font-size-hero-title: 6.3rem;
+  --font-size-hero-subtitle: 2.5rem;
+  --font-size-hero-ctabutton: 1.2rem;
+
   --font-size-small: 0.9rem;
   --font-size-base: 1rem;
   --font-size-medium: 1.1rem;
   --font-size-large: 1.4rem;
-  --font-size-xl: 1.8rem;
-  --font-size-xxl: 2.5rem;
-  --font-size-hero: 3rem;
+  --font-size-xlarge: 1.8rem;
+  --font-size-xxlarge: 2.5rem;
   
   /* Spacing */
-  --spacing-xs: 0.5rem;      /* 8px */
-  --spacing-sm: 1rem;        /* 16px */
-  --spacing-md: 1.5rem;      /* 24px */
-  --spacing-lg: 2rem;        /* 32px */
-  --spacing-xl: 3rem;        /* 48px */
-  --spacing-xxl: 4rem;       /* 64px */
-  --spacing-section: 5rem;   /* 80px */
-  --spacing-section-mobile: 3.75rem; /* 60px - mobile section padding */
+  --spacing-nav: 3px;
+  --spacing-hero-title: 4px;
+  --spacing-hero-subtitle: 3px;
   
+  --spacing-small: 1rem;        /* 16px */
+  --spacing-medium: 1.5rem;     /* 24px */
+  --spacing-large: 2rem;        /* 32px */
+  --spacing-xlarge: 3rem;       /* 48px */
+  --spacing-xxlarge: 4rem;      /* 64px */
+
   /* Border Radius */
-  --border-radius-sm: 3px;
-  --border-radius-md: 5px;
-  --border-radius-lg: 8px;
-  
+  --border-radius-small: 3px;
+  --border-radius-medium: 5px;
+  --border-radius-large: 8px;
+
   /* Shadows */
   --shadow-light: 0 2px 4px rgba(0,0,0,0.1);
   --shadow-medium: 0 4px 8px rgba(0,0,0,0.15);
+  --shadow-heavy: 0 8px 16px rgba(0,0,0,0.30);
   
   /* Transitions */
   --transition-fast: 0.2s ease;
